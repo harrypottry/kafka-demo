@@ -26,7 +26,7 @@ public class KafkaProducerDemo extends Thread{
         properties.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG,
                 "org.apache.kafka.common.serialization.StringSerializer");
         properties.put(ProducerConfig.PARTITIONER_CLASS_CONFIG,
-                "com.gupaoedu.kafka.MyPartition");
+                "com.test02.kafka.MyPartition");
         producer=new KafkaProducer<Integer, String>(properties);
         
         this.topic=topic;
